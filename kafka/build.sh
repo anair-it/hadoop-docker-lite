@@ -1,3 +1,3 @@
 #!/bin/sh
-docker build -t anair/kafka:0.8.2 .
+docker build -t anair/kafka:0.9.0.1 .
 

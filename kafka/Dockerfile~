@@ -2,10 +2,10 @@ FROM anair/hadoop_base
 
 MAINTAINER anair
 
-LABEL description="Build kafka 0.9.0.1 image"
+LABEL description="Build kafka 0.8.2 image"
 
-ENV SCALA_VERSION 2.10
-ENV KAFKA_VERSION 0.9.0.1
+ENV SCALA_VERSION 2.11
+ENV KAFKA_VERSION 0.8.2.1
 ENV KAFKA_HOME /opt/kafka_$SCALA_VERSION-$KAFKA_VERSION
 
 # Install Kafka

@@ -9,7 +9,7 @@ zookeeper:
 
 ###kafka
 kafka:
-  image: anair/kafka:0.9.0.1
+  image: anair/kafka:0.8.2
   container_name: kafka
   hostname: kafka
   ports:

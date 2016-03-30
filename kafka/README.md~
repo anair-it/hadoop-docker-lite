@@ -2,7 +2,7 @@
 This is a kafka docker image
 
 ##Version
-0.9.0.1
+0.8.2.1
 
 ##Building the image
 ```./build.sh```
