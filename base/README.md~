@@ -1,3 +1,0 @@
-Create base image with Ubuntu 14 and Oracle JDK 7. All hadoop images should extend this one.
-
-Refer (build.sh) for building the image.
