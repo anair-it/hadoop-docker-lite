@@ -1,0 +1,4 @@
+#!/bin/sh
+cd storm-nimbus; ./build.sh
+cd ../storm-supervisor; ./build.sh
+

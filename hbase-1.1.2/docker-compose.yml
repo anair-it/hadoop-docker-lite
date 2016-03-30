@@ -1,0 +1,21 @@
+###zookeeper
+zookeeper:
+  image: anair/zookeeper:3.4.6
+  container_name: zookeeper
+  hostname: zk
+  ports:
+    - "2181:2181"
+
+###hbase
+hbase:
+   image: anair/hbase:1.1.2
+   container_name: hbase
+   hostname: hbase
+   ports:
+     - "60000:60000"
+     - "60010:60010"
+     - "60020:60020"
+     - "60030:60030"
+   links:
+     - zookeeper:zk
+
