@@ -34,3 +34,10 @@ Restarting
 Reference
 -----
 - Refer README.md files in each image folder.
+
+Inspired by
+----
+- (https://github.com/wurstmeister/kafka-docker)
+- (https://github.com/wurstmeister/storm-docker)
+- (http://sookocheff.com/post/docker/containerizing-zookeeper-a-guided-tour/)
+- (http://www.slideshare.net/fabiofumarola1/8a-setup-hbase) 

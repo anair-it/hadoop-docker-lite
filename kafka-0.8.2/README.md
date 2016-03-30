@@ -1,5 +1,3 @@
-[Inspired by](https://github.com/wurstmeister/kafka-docker)
-
 # Kafka docker image
 This is a kafka docker image
 
