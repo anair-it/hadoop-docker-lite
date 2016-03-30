@@ -23,13 +23,18 @@ Verification
 ---
 - Run ```docker images``` to see all images created with proper tag version
 
-Running
-----
 Starting
+---
 - ```./start.sh```
 
 Restarting
+----
 - ```./restart.sh```
+
+Stopping
+----
+- ```docker-compose stop```
+
 
 Reference
 -----
@@ -37,7 +42,7 @@ Reference
 
 Inspired by
 ----
-- (https://github.com/wurstmeister/kafka-docker)
-- (https://github.com/wurstmeister/storm-docker)
-- (http://sookocheff.com/post/docker/containerizing-zookeeper-a-guided-tour/)
-- (http://www.slideshare.net/fabiofumarola1/8a-setup-hbase) 
+- https://github.com/wurstmeister/kafka-docker
+- https://github.com/wurstmeister/storm-docker
+- http://sookocheff.com/post/docker/containerizing-zookeeper-a-guided-tour/
+- http://www.slideshare.net/fabiofumarola1/8a-setup-hbase
