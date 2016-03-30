@@ -7,6 +7,7 @@ Versions
 ----
 - Ubuntu: 14.04
 - Java: Oracle JDK 7
+- hadoop : 2.7.1
 - Zookeeper: 3.4.6
 - Hbase: 1.1.2
 - Kafka: 0.8.2
@@ -46,3 +47,4 @@ Inspired by
 - https://github.com/wurstmeister/storm-docker
 - http://sookocheff.com/post/docker/containerizing-zookeeper-a-guided-tour/
 - http://www.slideshare.net/fabiofumarola1/8a-setup-hbase
+- https://hub.docker.com/r/sequenceiq/hadoop-ubuntu/
