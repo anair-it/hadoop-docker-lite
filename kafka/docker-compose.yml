@@ -1,7 +1,7 @@
 ###zookeeper
 zookeeper:
   image: anair/zookeeper_alpine:3.4.6
-  container_name: zookeeper1
+  container_name: zookeeper
   hostname: zk
   ports:
     - "2181:2181"
@@ -10,7 +10,6 @@ zookeeper:
 ###kafka
 kafka:
   image: anair/kafka_alpine:0.9.0.1
-  container_name: kafka1
   hostname: kafka
   ports:
     - "9092:9092"
