@@ -1,6 +1,6 @@
 Zookeeper docker image
 ========
-Build a zookeeper docker image on [Alpine Linux distro](http://www.alpinelinux.org/). 
+Build a zookeeper docker image on Alpine Linux distro. 
 The ports 2181,2888,3888 are exposed.
 
 Version

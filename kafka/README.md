@@ -1,6 +1,6 @@
 Kafka docker image
 =======
-Build a kafka docker image on [Alipine Linux distro](http://www.alpinelinux.org/)
+Build a kafka docker image on Alpine Linux distro.
 
 Version
 ----

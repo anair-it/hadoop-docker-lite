@@ -5,7 +5,7 @@
 
 Building the image
 ----
-Refer (build.sh) for building the image.
+- ```./build.sh```.
 
 Version
 ---
