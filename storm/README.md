@@ -27,5 +27,6 @@ http://localhost:49080
 
 
 ## Deploy a topology
-- ``storm jar my-topology.jar com.package topology-name``
 
+	
+	docker run -v _HOST-WORKSPACE_:/home/storm --rm --entrypoint storm anair/storm-nimbus_debian:0.10.0 jar /home/storm/_ARTIFACT-NAME_.jar _MAIN-CLASS-PACKAGE_ local -c nimbus.host=`docker inspect --format='{{.NetworkSettings.IPAddress}}' storm-nimbus`
