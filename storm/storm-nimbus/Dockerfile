@@ -1,4 +1,4 @@
-FROM anair/storm:0.10.0
+FROM anair/storm_debian:0.10.0
 MAINTAINER anair
 
 LABEL description="Docker Storm Nimbus image"

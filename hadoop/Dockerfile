@@ -1,4 +1,4 @@
-FROM anair/hadoop_base
+FROM anair/hadoop_base_debian
 MAINTAINER anair
 
 LABEL description="Build hadoop 2.7.1 image." inspiredBy="https://github.com/sequenceiq/docker-hadoop-ubuntu"
@@ -8,12 +8,8 @@ USER root
 ENV HADOOP_VERSION 2.7.1
 
 RUN mkdir -p /usr/java/default \
-  && ln -s /usr/lib/jvm/java-7-oracle/bin /usr/java/default
+  && ln -s /usr/lib/jvm/java-7-openjdk-amd64/bin /usr/java/default
 ENV PATH $PATH:$JAVA_HOME/bin
-
-# install dev tools
-RUN apt-get update \
-  && apt-get install -y curl sudo openssh-server openssh-client rsync
 
 # passwordless ssh
 RUN rm -f /etc/ssh/ssh_host_dsa_key /etc/ssh/ssh_host_rsa_key /root/.ssh/id_rsa \

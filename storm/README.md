@@ -1,13 +1,18 @@
 Storm docker image
 ============
+Build a storm docker image on Debian Linux distro.
 
-##Verison
+
+Verison
+----
 0.10.0
 
-##Building the image
+Building the image
+----
 - ```./build.sh```
 
-##Usage
+Usage
+---
 
 Start a cluster with zookeeper and docker:
 
@@ -22,10 +27,12 @@ Add more supervisors:
 - ```docker-compose scale supervisor=3```
 
 
-## Access Storm UI
+Access Storm UI
+----
 - (http://localhost:49080)
 
 
-### Deploy a topology
+Deploy a topology
+-----
 - ```storm jar my-topology.jar com.package topology-name```
 

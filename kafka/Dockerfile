@@ -1,6 +1,5 @@
-FROM anair/hadoop_base
-
-MAINTAINER anair
+FROM anair/hadoop_base_alpine
+MAINTAINER railinc
 
 LABEL description="Build kafka 0.9.0.1 image"
 
@@ -9,7 +8,7 @@ ENV KAFKA_VERSION 0.9.0.1
 ENV KAFKA_HOME /opt/kafka_$SCALA_VERSION-$KAFKA_VERSION
 
 # Install Kafka
-RUN wget -q -O  - http://apache.mirrors.spacedump.net/kafka/$KAFKA_VERSION/kafka_$SCALA_VERSION-$KAFKA_VERSION.tgz | tar -xzf - -C /opt
+RUN wget -O  - http://apache.mirrors.spacedump.net/kafka/$KAFKA_VERSION/kafka_$SCALA_VERSION-$KAFKA_VERSION.tgz | tar -xzf - -C /opt 
 
 VOLUME ["/kafka"]
 

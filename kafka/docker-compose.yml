@@ -1,7 +1,7 @@
 ###zookeeper
 zookeeper:
-  image: anair/zookeeper:3.4.6
-  container_name: zookeeper
+  image: anair/zookeeper_alpine:3.4.6
+  container_name: zookeeper1
   hostname: zk
   ports:
     - "2181:2181"
@@ -9,8 +9,8 @@ zookeeper:
 
 ###kafka
 kafka:
-  image: anair/kafka:0.9.0.1
-  container_name: kafka
+  image: anair/kafka_alpine:0.9.0.1
+  container_name: kafka1
   hostname: kafka
   ports:
     - "9092:9092"
@@ -19,6 +19,19 @@ kafka:
   environment:
     KAFKA_ADVERTISED_HOST_NAME: 192.168.56.102
     KAFKA_ADVERTISED_PORT: 9092
-    KAFKA_CREATE_TOPICS: "INBOUND:1:1,OUTBOUND:1:1"
+    KAFKA_ZOOKEEPER_CONNECT: "zk:2181"
   volumes:
     - /var/run/docker.sock:/var/run/docker.sock
+
+kafka-manager:
+  image: sheepkiller/kafka-manager:latest
+  container_name: kafka-manager
+  ports:
+    - "9000:9000"
+  links:
+    - zookeeper:zk
+    - kafka:kafka
+  environment:
+    ZK_HOSTS: "zk:2181"
+    APPLICATION_SECRET: letmein
+    KM_ARGS: -Djava.net.preferIPv4Stack=true
