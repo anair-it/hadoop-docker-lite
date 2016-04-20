@@ -1,6 +1,6 @@
 ###zookeeper
 zookeeper:
-  image: anair/zookeeper_alpine:3.4.6
+  image: railinc/zookeeper_alpine:3.4.6
   container_name: zookeeper
   hostname: zk
   ports:
@@ -8,7 +8,7 @@ zookeeper:
 
 ###hbase
 hbase:
-   image: anair/hbase_alpine:1.1.2
+   image: railinc/hbase_alpine:1.1.2
    container_name: hbase
    hostname: hbase
    ports:
@@ -21,7 +21,7 @@ hbase:
 
 ###kafka
 kafka:
-  image: anair/kafka_alpine:0.9.0.1
+  image: railinc/kafka_alpine:0.9.0.1
   hostname: kafka
   ports:
     - "9092:9092"
@@ -49,7 +49,7 @@ kafka-manager:
 
 ###Storm
 nimbus:
-  image: anair/storm-nimbus_debian:0.10.0
+  image: railinc/storm-nimbus_debian:0.10.0
   container_name: storm-nimbus
   hostname: nimbus   
   ports:
@@ -62,7 +62,7 @@ nimbus:
     - hbase:hbase
 
 supervisor:
-  image: anair/storm-supervisor_debian:0.10.0
+  image: railinc/storm-supervisor_debian:0.10.0
   ports:
     - "8000"
     - "22"
@@ -71,7 +71,7 @@ supervisor:
     - zookeeper:zk
     - hbase:hbase
 ui:
-  image: anair/storm-ui_debian:0.10.0
+  image: railinc/storm-ui_debian:0.10.0
   container_name: storm-ui
   ports:
     - "49080:8080"
@@ -82,7 +82,7 @@ ui:
 
 ##hadoop
 hadoop:
-  image: anair/hadoop_debian:2.7.1
+  image: railinc/hadoop_debian:2.7.1
   container_name: hadoop
   hostname: hadoop
   ports:
