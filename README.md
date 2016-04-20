@@ -31,12 +31,10 @@ Note: Hadoop and storm are built on Debian Linux and all others on Alpine Linux
 
 - Get zookeeper IP address using 
 
-
-	docker inspect --format='{{.NetworkSettings.IPAddress}}' zookeeper`
+``docker inspect --format='{{.NetworkSettings.IPAddress}}' zookeeper``
 - Get hbase IP address using 
-	
-	
-	docker inspect --format='{{.NetworkSettings.IPAddress}}' hbase`
+
+``docker inspect --format='{{.NetworkSettings.IPAddress}}' hbase``
 - Add zookeeper and hbase entries in the host /etc/hosts file
 
 ## Verification
@@ -46,12 +44,15 @@ Note: Hadoop and storm are built on Debian Linux and all others on Alpine Linux
 If there is inconsistency in the image creation process, run the affected build script only. The build script is in each component directory.
 
 ## Starting
-- ``./start.sh`` (background process)
+
+``./start.sh`` (background process)
 OR
-- ``docker-compose up``  (foreground process)
+
+``docker-compose up``  (foreground process)
 
 ## Stopping
-- ``docker-compose stop``
+
+``docker-compose stop``
 
 
 ## Web UI
