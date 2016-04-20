@@ -1,18 +1,14 @@
-Zookeeper docker image
-========
+# Zookeeper docker image
 Build a zookeeper docker image on Alpine Linux distro. 
 The ports 2181,2888,3888 are exposed.
 
-Version
-----
+## Version
 3.4.6
 
 
-Building the image
-----
-- ```./build.sh```
+## Building the image
+- ``./build.sh``
 
-Running zookeeper on a container
-----
-- ```./run.sh```
+## Running zookeeper on a container
+- ``./run.sh``
 
