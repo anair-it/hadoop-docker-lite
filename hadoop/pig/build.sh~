@@ -1,0 +1,3 @@
+#!/bin/sh
+docker build -t railinc/pig_hadoop_debian:0.15.0 .
+

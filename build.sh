@@ -7,3 +7,4 @@ cd ../storm; ./build.sh
 
 cd ../debian-base; ./build.sh
 cd ../hadoop; ./build.sh
+cd pig; ./build.sh

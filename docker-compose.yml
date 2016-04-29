@@ -101,3 +101,10 @@ hadoop:
     - "8042:8042"
     - "8088:8088"
 
+##pig
+pig:
+  image: anair/pig_hadoop_debian:0.15.0
+  container_name: pig
+  links: 
+    - hadoop
+

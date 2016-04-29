@@ -7,6 +7,7 @@ Build a lightweight hadoop cluster with below mentioned hadoop services. These v
 - Debian: 8.3
 - Java: Open JDK 7
 - hadoop : 2.7.1
+- pig: 0.15.0
 - Zookeeper: 3.4.6
 - Hbase: 1.1.2
 - Kafka: 0.9.0.1
@@ -68,6 +69,7 @@ Please go through below READMEs to get detailed information about each image
 - [Alpine base README](alpine-base/README.md)
 - [Debian base README](debian-base/README.md)
 - [Hadoop README](hadoop/README.md)
+- [Pig README](hadoop/pig/README.md)
 - [Zookeeper README](zookeeper/README.md)
 - [Hbase README](hbase/README.md)
 - [Kafka README](kafka/README.md)
