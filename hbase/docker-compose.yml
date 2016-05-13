@@ -1,6 +1,6 @@
 ###zookeeper
 zookeeper:
-  image: anair/zookeeper_alpine:3.4.6
+  image: anoopnair/zookeeper_alpine:3.4.6
   container_name: zookeeper
   hostname: zk
   ports:
@@ -8,7 +8,7 @@ zookeeper:
 
 ###hbase
 hbase:
-   image: anair/hbase_alpine:1.1.2
+   image: anoopnair/hbase_alpine:1.1.2
    container_name: hbase
    hostname: hbase
    ports:

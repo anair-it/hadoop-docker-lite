@@ -1,5 +1,5 @@
-FROM anair/hadoop_base_alpine
-MAINTAINER anair
+FROM anoopnair/hadoop_base_alpine
+MAINTAINER Anoop Nair<anoopnair.it@gmail.com>
 
 LABEL description="Build docker hbase 1.1.2 and Phoenix 4.7.0 image"
 
