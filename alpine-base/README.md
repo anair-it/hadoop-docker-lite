@@ -6,7 +6,7 @@
 
 Building the image
 ----
-- ``docker build -t anoopnair/hadoop_base_alpine``
+- ``docker build -t anoopnair/hadoop_base_alpine .``
 
 Version
 ---
