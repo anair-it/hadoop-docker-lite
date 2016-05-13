@@ -1,5 +1,5 @@
-FROM anair/hadoop_debian:2.7.1
-MAINTAINER anair
+FROM anoopnair/hadoop_debian:2.7.1
+MAINTAINER Anoop Nair<anoopnair.it@gmail.com>
 
 LABEL description="Install pig on hadoop 2.7.1 image."
 

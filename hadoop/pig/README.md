@@ -7,9 +7,9 @@ This is a hadoop pig docker build project on Debian Linux distro.
 
 
 ## Building the image
-- ``./build.sh``
+- ``docker build -t anoopnair/pig_hadoop_debian:0.15.0 .``
 
 ## Running
-- ``docker run --name pig -it anair/pig_hadoop_debian:0.15.0 bash``
+- ``docker run --name pig -it anoopnair/pig_hadoop_debian:0.15.0 bash``
 - and then start running pig scripts
 

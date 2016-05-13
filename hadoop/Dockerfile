@@ -1,7 +1,7 @@
-FROM anair/hadoop_base_debian
-MAINTAINER anair
+FROM anoopnair/hadoop_base_debian
+MAINTAINER Anoop Nair<anoopnair.it@gmail.com>
 
-LABEL description="Build hadoop 2.7.1 image." inspiredBy="https://github.com/sequenceiq/docker-hadoop-ubuntu"
+LABEL description="Build hadoop 2.7.1 image." inspired by="https://github.com/sequenceiq/docker-hadoop-ubuntu"
 
 USER root
 
