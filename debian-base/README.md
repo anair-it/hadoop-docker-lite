@@ -5,7 +5,7 @@
 
 Building the image
 ----
-- ``./build.sh``
+- ``docker build -t anoopnair/hadoop_base_debian .``
 
 Version
 ---

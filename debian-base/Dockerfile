@@ -1,5 +1,5 @@
 FROM debian:8.3
-MAINTAINER anair
+MAINTAINER Anoop Nair<anoopnair.it@gmail.com>
 
 RUN apt-get update && \
     apt-get install -y git curl wget ca-certificates sudo openssh-server openssh-client rsync supervisor openjdk-7-jdk

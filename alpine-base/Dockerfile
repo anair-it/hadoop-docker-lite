@@ -1,5 +1,5 @@
 FROM alpine
-MAINTAINER anair
+MAINTAINER Anoop Nair<anoopnair.it@gmail.com>
 
 RUN apk --update add bash git wget ca-certificates sudo openssh rsync openjdk7 && \
   rm -rf /var/cache/apk/* && \

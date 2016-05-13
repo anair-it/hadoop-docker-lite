@@ -1,5 +1,5 @@
-FROM anair/hadoop_base_alpine
-MAINTAINER anair
+FROM anoopnair/hadoop_base_alpine
+MAINTAINER Anoop Nair<anoopnair.it@gmail.com>
 
 LABEL description="Build zookeeper 3.4.6 image"
 
