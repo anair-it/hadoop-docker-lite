@@ -1,7 +1,7 @@
-FROM anair/hadoop_base_alpine
-MAINTAINER anair
+FROM anoopnair/hadoop_base_alpine
+MAINTAINER Anoop Nair<anoopnair.it@gmail.com>
 
-LABEL description="Build kafka 0.9.0.1 image"
+LABEL description="Build kafka 0.9.0.1 image, cloned from https://hub.docker.com/r/wurstmeister/kafka/"
 
 ENV SCALA_VERSION 2.10
 ENV KAFKA_VERSION 0.9.0.1
