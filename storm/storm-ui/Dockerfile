@@ -1,5 +1,5 @@
-FROM anair/storm_debian:0.10.0
-MAINTAINER anair
+FROM anoopnair/storm_debian:0.10.0
+MAINTAINER Anoop Nair<anoopnair.it@gmail.com>
 
 LABEL description="Docker Storm UI image"
 

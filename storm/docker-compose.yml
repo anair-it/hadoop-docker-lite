@@ -1,11 +1,11 @@
 zookeeper:
-  image: anair/zookeeper_alpine:3.4.6
+  image: anoopnair/zookeeper_alpine:3.4.6
   hostname: zk
   ports: 
     - "2181:2181"
 
 nimbus:
-  image: anair/storm-nimbus_debian:0.10.0
+  image: anoopnair/storm-nimbus_debian:0.10.0
   ports:
     - "49773:3773"
     - "49772:3772"
@@ -15,7 +15,7 @@ nimbus:
     - zookeeper:zk
 
 supervisor:
-  image: anair/storm-supervisor_debian:0.10.0
+  image: anoopnair/storm-supervisor_debian:0.10.0
   ports:
     - "8000"
     - "22"
@@ -24,7 +24,7 @@ supervisor:
     - zookeeper:zk
 
 ui:
-  image: anair/storm-ui_debian:0.10.0
+  image: anoopnair/storm-ui_debian:0.10.0
   ports:
     - "49080:8080"
     - "22"

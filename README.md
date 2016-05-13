@@ -26,7 +26,8 @@ Note: Hadoop and storm are built on Debian Linux and all others on Alpine Linux
 
 
 ## Building all images
-- ``./build.sh``
+- Pull from docker hub OR
+- Build each image individually
 
 >This will individually build the above mentioned images. This will take sometime and is required to be done only once.
 

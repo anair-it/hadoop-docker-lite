@@ -1,5 +1,5 @@
-FROM anoopnair/hadoop_base_debian
-MAINTAINER Anoop Nair<anoopnair.it@gmail.com>
+FROM anair/hadoop_base_debian
+MAINTAINER anair
 
 LABEL description="Docker Storm base image"
 
