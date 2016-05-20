@@ -27,6 +27,8 @@ Destroy a cluster:
 ## Notes
 The default _docker-compose.yml_ should be seen as a starting point. By default each broker will get a new port number and broker id on restart. Depending on your use case this might not be desirable. If you need to use specific ports and broker ids, modify the docker-compose configuration accordingly
 
+- Find the IP address of the host and put that in kafka.yml against _KAFKA_ADVERTISED_HOST_NAME_
+
 
 ### Automatically create topics
 If you want to have kafka-docker automatically create topics in Kafka during creation, a _KAFKA_CREATE_TOPICS_ environment variable can be
