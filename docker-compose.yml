@@ -20,6 +20,8 @@ kafka:
     service: kafka
   links:
     - zookeeper:zk
+  volumes:
+    - /var/run/docker.sock:/var/run/docker.sock    
 
 kafka-manager:
   extends:
