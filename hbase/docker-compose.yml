@@ -1,15 +1,5 @@
-###zookeeper
-zookeeper:
-  image: anoopnair/zookeeper_alpine:3.4.6
-  container_name: zookeeper
-  hostname: zk
-  ports:
-    - "2181:2181"
-
-###hbase
 hbase:
    image: anoopnair/hbase_alpine:1.1.2
-   container_name: hbase
    hostname: hbase
    ports:
      - "60000:60000"
@@ -18,6 +8,4 @@ hbase:
      - "60030:60030"
      - "8070:8070"
      - "8090:8090"
-   links:
-     - zookeeper:zk
 
